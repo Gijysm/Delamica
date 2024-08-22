@@ -1,0 +1,9 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dela" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" singleton="false" PROGRAM_PARAMS="./test.D" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Delamica" TARGET_NAME="main.cpp - WSL" CONFIG_NAME="Dela">
+    <option name="sourceFile" value="C:\Users\popka\CLionProjects\Delamica\src\main.cpp" />
+    <option name="toolchainName" value="WSL" />
+    <method v="2">
+      <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
