@@ -1,8 +1,7 @@
 ﻿#include "Tokenization.h"
+class Tokenizer;
 using namespace std;
-vector<Token> tokenize(const string& str) {
 
-}
 string token_to_asm(const vector<Token>& tokens) {
     stringstream output;
     output << "global _start\n_start:\n";
@@ -36,8 +35,8 @@ int main(int argc, char* argv[])
     file.close();
         res = ss.str();
     }
-
-    vector<Token> token = tokenize(res);
+    Tokenizer tokenizer(res);
+    vector<Token> token = tokenizer.tokenize(res);
     {
         fstream out_file("out.asm", ios::out);
         out_file << token_to_asm(token);

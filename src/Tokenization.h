@@ -23,18 +23,6 @@ class Tokenizer
   private:
   const string msr_c;
   int m_index;
-  [[nodiscard]] optional<char> peak(int ahead = 1) const
-  {
-    if (m_index + 1 >msr_c.length()) {
-      return{};
-    }
-    else {
-      return msr_c.at(m_index);
-    }
-  }
-  char consume() {
-    return msr_c.at(m_index++);
-  }
   public:
     inline Tokenizer(string str): msr_c(move(str)) {
 
@@ -96,7 +84,10 @@ class Tokenizer
       }
       return tokens;
     }
-    ~Tokenizer();
+    ~Tokenizer()
+    {
+
+     }
 
   };
 #endif //TOKENIZATION_H
